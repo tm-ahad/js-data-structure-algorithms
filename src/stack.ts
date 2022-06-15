@@ -1,11 +1,14 @@
-import { threadId } from "worker_threads";
 
 class Stack <type=any>{
       private _stack: type[] = [];
       private _size: number = 0;
    
+      public constructor(...value: type[]) {
+         this._stack.push(...value)
+         this._size += value.length
+      }
       public push(...value: type[]): void {
-         value.forEach(value => this._stack.push(value)) 
+         this._stack.push(...value)
          this._size++
       }
       public pop(): void {
@@ -25,12 +28,8 @@ class Stack <type=any>{
          return this._stack
       }
 } 
-let myStack = new Stack<number>()
-
-myStack.push(9, 8, 7, 6, 5, 4, 3, 2, 1)
+let myStack = new Stack<number>(1, 2, 3, 4, 5)
 
 console.log(myStack.view())
-
 myStack.pop()
-
 console.log(myStack.view())
