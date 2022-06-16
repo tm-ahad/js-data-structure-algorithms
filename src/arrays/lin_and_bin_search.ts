@@ -1,9 +1,10 @@
 //binary search in a array
 
-const arr = [1, 2, 3, 4];
+const arr = [1, 3, 2, 4];
 const target = 2;
 
 const binarySearch = function <type = string | number>(arr: type[], target: type): any {
+   arr = arr.sort((a: any, b: any) => a - b)
    let findingZone = arr
    let len = findingZone.length
    let mid = Math.floor(len / 2)
