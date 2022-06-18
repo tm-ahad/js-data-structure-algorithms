@@ -1,10 +1,11 @@
 
-class priorityQueue <type=any>{
+class PriorityQueue <type=any>{
    private _queue: type[] = [];
    private _size: number = 0
 
    public constructor (...value: type[]) {
       this._queue = value
+   
    }
 
    public sort(): void {
@@ -39,5 +40,5 @@ class priorityQueue <type=any>{
    
 }
 
-let priorityQueue1 = new priorityQueue(1, 2, 3, 4, 5, 5)
-console.log(priorityQueue1.view())
+let priorityQueue__ = new PriorityQueue(1, 2, 3, 4, 5, 5)
+console.log(priorityQueue__.view())
