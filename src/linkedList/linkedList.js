@@ -1,8 +1,7 @@
-
-class Node{
-    constructor(data = null, next = null){
-        this.data = data;
-        this.next = next;
+class Node {
+    constructor(data, next) {
+        this.data = data
+        this.next = next
     }
 }
 
@@ -21,24 +20,24 @@ class LinkedList{
         })
     }
     addByIndex(index, value){
-       let absInd = Math.abs(index - 1)
-       let prevInd = 0
-       let preval = this.getByIndex(prevInd, "Node", true)
-       console.log("🚀 ~ file: linkedList.js ~ line 27 ~ LinkedList ~ addByIndex ~ preval", preval)
-       preval.data = value
+        index === 0 && (() => {
+            this.addByIndex(value)
+        })()
+        let prev = this.getByIndex(index - 1, "Node", true)
+        prev.next = new Node(value, prev.next)
     }
     getIndex(value){
         let index = 0
         let current = {...this.head}
         while (current.data !== value){
-            current = current.next
+            current = current.next ? current.next : null
             index++
         }
         return index
     }
     getByIndex(index, format, isRefference){
-        let currentRef = this.head.next
-        let current = {...this.head.next}
+        let currentRef = this.head
+        let current = {...this.head}
         if (isRefference){   
             while (index > 0){
                 current = current.next
@@ -76,5 +75,5 @@ class LinkedList{
 }
 
 let list = new LinkedList(1, 2, 3, 4, 5, 6)
-list.addByIndex(0, 7)
-console.log(list.head, 'sign')
+list.addByIndex(1, 7)
+console.log(list)
