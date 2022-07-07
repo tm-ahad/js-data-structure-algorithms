@@ -1,8 +1,21 @@
 {
-  "devDependencies": {
-    "@types/node": "^17.0.43",
-    "ts-node": "^10.8.1",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.3"
-  }
+  "name": "data_structure_algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tm-ahad/data_structure_algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tm-ahad/data_structure_algorithm/issues"
+  },
+  "homepage": "https://github.com/tm-ahad/data_structure_algorithm#readme"
 }

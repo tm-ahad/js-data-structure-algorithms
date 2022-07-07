@@ -19,3 +19,5 @@ const insertion_sort = (arr, element) => {
       return arrCopy
 }
 console.log(insertion_sort([7, 6, 5, 4], 1))
+
+export default insertion_sort;
