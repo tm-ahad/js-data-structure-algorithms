@@ -1,5 +1,5 @@
 {
-  "name": "data_structure_algorithm",
+  "name": "data-structure-algorithm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tm-ahad/data_structure_algorithm/issues"
+    "url": "https://github.com/tm-ahad/data-structure-algorithm/issues"
   },
-  "homepage": "https://github.com/tm-ahad/data_structure_algorithm#readme"
+  "homepage": "https://github.com/tm-ahad/data-structure-algorithm#readme"
 }

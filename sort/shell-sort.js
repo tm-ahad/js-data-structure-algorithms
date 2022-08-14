@@ -1,4 +1,4 @@
-import insertion_sort from "./insertionsort.js";
+import insertion_sort from "./insertion-sort.js";
 
 const shellSort = arr => {
    let sorted_arr = arr.splice(0, arr.length/2),

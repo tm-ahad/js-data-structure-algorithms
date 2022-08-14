@@ -1,4 +1,4 @@
-//binary search in a array
+//binary search in an array
 
 const arr = [1, 3, 2, 4];
 const target = 2;
